@@ -5,30 +5,42 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="header">
+
+  <!-- Navigation Bar -->
+  <div class="navbar">
+    <a href="#home">Home</a>
+    <a href="#about">About Us</a>
+    <a href="#contact">Contact Us</a>
+  </div>
+
+  <!-- Header -->
+  <div class="header" id="home">
     <img src="images.png" class="logo" alt="College Logo">
     <h1>TILAK MAHARASHTRA VIDHYAPEETH EVENT PORTAL</h1>
   </div>
 
+  <!-- Events -->
   <div class="event">
     <h2>Tech Talk: AI in 2025</h2>
     <p>Date: 30th September 2025</p>
-    <p>Location:Himalay Seminar Hall</p>
+    <p>Location: Himalay Seminar Hall</p>
     <p>Speaker: Aditya Rajwade (AI Specialist, Working in Microsoft)</p>
-    <img src="fst (1).jpeg" class="logo" alt="College Logo">
-    <div class="countdown" id="countdown1"></div> <!-- For Tech Talk -->
+    <img src="fst (1).jpeg" class="logo" alt="Event Image">
+    <div class="countdown" id="countdown1"></div>
     <button onclick="showForm('Tech Talk: AI in 2025')">Register</button>
   </div>
+
   <div class="event">
     <h2>Azure Databricks Workshop</h2>
     <p>Date: 5th October 2025</p>
     <p>Location: Sahyadri Lab Block</p>
     <p>Speaker: Vedant Chaudhary (AI Specialist, Working in Microsoft)</p>
-    <img src="fst (2).jpeg" class="logo" alt="College Logo">
-    <div class="countdown" id="countdown2"></div> <!-- For Databricks Workshop -->
+    <img src="fst (2).jpeg" class="logo" alt="Event Image">
+    <div class="countdown" id="countdown2"></div>
     <button onclick="showForm('Azure Databricks Workshop')">Register</button>
   </div>
 
+  <!-- Registration Form -->
   <form id="registrationForm" style="display:none;" onsubmit="submitForm(event)">
     <input type="hidden" id="eventName">
     <label>Your Name:</label>
@@ -55,6 +67,7 @@
     <button type="submit">Submit</button>
   </form>
 
+  <!-- Registered Students -->
   <h3>Registered Students</h3>
   <table id="registrationTable" border="1">
     <thead>
@@ -62,6 +75,20 @@
     </thead>
     <tbody></tbody>
   </table>
+
+  <!-- About Us Section -->
+  <div class="section" id="about">
+    <h2>About Us</h2>
+    <p>Tilak Maharashtra Vidyapeeth organizes workshops, seminars, and talks to enhance student knowledge with the latest industry trends and technologies.</p>
+  </div>
+
+  <!-- Contact Us Section -->
+  <div class="section" id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: events@tmv.edu</p>
+    <p>Phone: +91-9876543210</p>
+    <p>Address: Tilak Maharashtra Vidyapeeth, Pune</p>
+  </div>
 
   <script src="script.js"></script>
 </body>
