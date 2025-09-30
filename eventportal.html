@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>College Event Portal</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="header">
+    <img src="C:\Users\omkarga\Downloads\updated_event_portal (1)\images.png" class="logo" alt="College Logo">
+    <h1>TILAK MAHARASHTRA VIDHYAPEETH EVENT PORTAL</h1>
+  </div>
+
+  <div class="event">
+    <h2>Tech Talk: AI in 2025</h2>
+    <p>Date: 30th September 2025</p>
+    <p>Location:Himalay Seminar Hall</p>
+    <p>Speaker: Aditya Rajwade (AI Specialist, Working in Microsoft)</p>
+    <img src="C:\Users\omkarga\Downloads\updated_event_portal (1)\fst (1).jpeg" class="logo" alt="College Logo">
+    <div class="countdown" id="countdown1"></div> <!-- For Tech Talk -->
+    <button onclick="showForm('Tech Talk: AI in 2025')">Register</button>
+  </div>
+  <div class="event">
+    <h2>Azure Databricks Workshop</h2>
+    <p>Date: 5th October 2025</p>
+    <p>Location: Sahyadri Lab Block</p>
+    <p>Speaker: Vedant Chaudhary (AI Specialist, Working in Microsoft)</p>
+    <img src="C:\Users\omkarga\Downloads\updated_event_portal (1)\fst (2).jpeg" class="logo" alt="College Logo">
+    <div class="countdown" id="countdown2"></div> <!-- For Databricks Workshop -->
+    <button onclick="showForm('Azure Databricks Workshop')">Register</button>
+  </div>
+
+  <form id="registrationForm" style="display:none;" onsubmit="submitForm(event)">
+    <input type="hidden" id="eventName">
+    <label>Your Name:</label>
+    <input type="text" id="studentName" required>
+    <label>Email:</label>
+    <input type="email" id="studentEmail" required>
+    <label>Class:</label>
+    <select id="studentClass" required>
+      <option value="">Select Class</option>
+      <option value="BCA">BCA</option>
+      <option value="BSC">BSC</option>
+      <option value="BCOM">BCOM</option>
+      <option value="MCOM">MCOM</option>
+      <option value="MCA">MCA</option>
+      <option value="MSC">MSC</option>
+    </select>
+    <label>Year:</label>
+    <select id="studentYear" required>
+      <option value="">Select Year</option>
+      <option value="First">First</option>
+      <option value="Second">Second</option>
+      <option value="Third">Third</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <h3>Registered Students</h3>
+  <table id="registrationTable" border="1">
+    <thead>
+      <tr><th>Name</th><th>Email</th><th>Event</th><th>Class</th><th>Year</th></tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+
+  <script src="script.js"></script>
+</body>
+</html>
