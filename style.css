@@ -1,0 +1,118 @@
+
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+/* Header */
+.header {
+  text-align: center;
+  background-color: #003366;
+  color: white;
+  padding: 20px;
+}
+
+.logo {
+  height: 80px;
+  vertical-align: middle;
+}
+
+/* Event Block */
+.event {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: white;
+  border: 1px solid #ccc;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.event-details {
+  flex: 1;
+}
+
+.event img {
+  height: 150px;
+  margin-left: 20px;
+  border-radius: 8px;
+}
+
+/* Countdown Timer */
+.countdown {
+  font-weight: bold;
+  color: #007BFF;
+  margin-top: 10px;
+}
+
+/* Registration Form */
+#registrationForm {
+  background-color: white;
+  padding: 20px;
+  margin: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#registrationForm label {
+  display: block;
+  margin-top: 10px;
+}
+
+#registrationForm input,
+#registrationForm select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+}
+
+
+#registrationForm button {
+  align-self: flex-end; /* Aligns the button to the right */
+  margin-top: auto;     /* Pushes the button to the bottom */
+  padding: 10px 20px;
+  background-color: #003366;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+
+#registrationForm button:hover {
+  background-color: #0055aa;
+}
+
+/* Stats Section */
+.stats {
+  margin: 20px;
+  font-size: 18px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+
+
+.countdown {
+  font-weight: bold;
+  color: #007BFF;
+  margin-top: 10px;
+}
+
+.stats {
+  margin: 20px;
+  font-size: 18px;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
