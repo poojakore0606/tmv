@@ -147,6 +147,20 @@ body {
   box-shadow: 0 2px 5px rgba(0,0,0,0.1);
 }
 
+.event-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.speaker-img {
+  height: 150px;
+  border-radius: 8px;
+  margin-left: 20px;
+}
+
+
+
 
 
 
